@@ -1,0 +1,70 @@
+
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3D ADVENTURE</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div id="gameUI">
+    <div class="topbar">
+      <div class="brand">🌲 ADVENTURE</div>
+      <div class="stats">
+        <div>💎 <span id="score">0</span></div>
+        <div>❤️ <span id="lives">3</span></div>
+        <div>🗝️ <span id="keyStatus">0/1</span></div>
+      </div>
+    </div>
+
+    <div class="level">
+      <span id="levelText">1-LEVEL: SIRLI O‘RMON</span>
+      <div class="progress">
+        <div id="progressBar"></div>
+      </div>
+    </div>
+
+    <div id="message">Kristallarni yig‘ing va kalitni toping!</div>
+  </div>
+
+  <div id="startScreen" class="screen">
+    <div class="panel">
+      <div class="big-icon">🌲</div>
+      <h1>3D ADVENTURE</h1>
+      <p>Sirli o‘rmon sarguzashti</p>
+      <div class="instructions">
+        💎 Kristallarni yig‘ing<br>
+        🗝️ Kalitni toping<br>
+        👾 Dushmanlardan qoching<br>
+        🚪 Portalga yetib boring
+      </div>
+      <button id="startBtn">O‘YINNI BOSHLASH</button>
+    </div>
+  </div>
+
+  <div id="endScreen" class="screen hidden">
+    <div class="panel">
+      <div class="big-icon" id="endIcon">🏆</div>
+      <h1 id="endTitle">G‘ALABA!</h1>
+      <p id="endText">Siz o‘yinni tugatdingiz!</p>
+      <button id="restartBtn">QAYTA O‘YNASH</button>
+    </div>
+  </div>
+
+  <div id="mobileControls">
+    <div class="dpad">
+      <button class="control up" data-dir="up">▲</button>
+      <button class="control left" data-dir="left">◀</button>
+      <button class="control down" data-dir="down">▼</button>
+      <button class="control right" data-dir="right">▶</button>
+    </div>
+    <button id="jumpBtn" class="jump">JUMP<br>⤴</button>
+  </div>
+
+  <div class="footer">Created by Ulug'bek R.</div>
+
+  <script type="module" src="script.js"></script>
+</body>
+</html>
